@@ -67,12 +67,16 @@ favoriteThings.car = "Subaru";
 favoriteThings.show = "Narcos";
 console.log(favoriteThings);
 /*
+
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
 //Code here
 
+favoriteThings["food"] = "Chicken Nuggets";
+
+console.log(favoriteThings);
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
