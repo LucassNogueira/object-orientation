@@ -154,6 +154,13 @@ totalPopulation(states);
 
 //Code Here
 
+function ingredients(obj) {
+  let { carb, fat, protein } = obj;
+  return [carb, fat, protein];
+}
+
+console.log(ingredients({ carb: "pizza", fat: "butter", protein: "chicken" }));
+
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
 var user = {
