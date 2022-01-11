@@ -261,34 +261,34 @@ delete user.age;
 
 //Code Here
 
-class Phone {
-  constructor(brand, model, storage, color, price) {
-    this.brand = brand;
-    this.model = model;
-    this.storage = storage;
-    this.color = color;
-    this.price = price;
-    this.sold = false;
-  }
+// class Phone {
+//   constructor(brand, model, storage, color, price) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.storage = storage;
+//     this.color = color;
+//     this.price = price;
+//     this.sold = false;
+//   }
 
-  sell() {
-    this.sold = true;
-    // console.log(this.sold);
-    console.log(this.brand, this.model, "has been sold.");
-  }
+//   sell() {
+//     this.sold = true;
+//     // console.log(this.sold);
+//     console.log(this.brand, this.model, "has been sold.");
+//   }
 
-  changePrice(newPrice) {
-    this.price = newPrice;
-  }
-}
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+// }
 
-let phone1 = new Phone("iphone", "X", "225G", "white", "$500");
-console.log(phone1);
-phone1.sell();
+// let phone1 = new Phone("iphone", "X", "225G", "white", "$500");
+// console.log(phone1);
+// phone1.sell();
 
-phone1.changePrice("$1000");
+// phone1.changePrice("$1000");
 
-console.log(phone1);
+// console.log(phone1);
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -300,11 +300,11 @@ console.log(phone1);
 */
 
 //Code Here
-let phone2 = new Phone("motorola", "razer", "500mb", "black", "$299");
+// let phone2 = new Phone("motorola", "razer", "500mb", "black", "$299");
 
-let phone3 = new Phone("tmobile", "sidekick", "1g", "red", "$200");
+// let phone3 = new Phone("tmobile", "sidekick", "1g", "red", "$200");
 
-let phone4 = new Phone("nokia", "3310", "1mb", "silver", "$160");
+// let phone4 = new Phone("nokia", "3310", "1mb", "silver", "$160");
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -314,8 +314,8 @@ let phone4 = new Phone("nokia", "3310", "1mb", "silver", "$160");
 
 //Code Here
 
-phone2.changePrice("$400");
-console.log(phone2);
+// phone2.changePrice("$400");
+// console.log(phone2);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -324,8 +324,8 @@ console.log(phone2);
 */
 
 //Code Here
-phone4.sell();
-console.log(phone4.sold);
+// phone4.sell();
+// console.log(phone4.sold);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
@@ -344,7 +344,8 @@ const colors = {
 //do not edit this object
 
 //Code Here
-
+let colorsCopy = { ...colors };
+// console.log(colorsCopy);
 /*
  Now use the spread operator to combine the following 2 objects into one. 
  Call the new variable helensInfo. 
@@ -367,9 +368,13 @@ const shippingInfo = {
   state: "AZ",
   zipCode: 85004,
 };
+
 //do not edit the objects above
 
 //Code Here
+
+helensInfo = { ...contactInfo, ...shippingInfo };
+// console.log(helensInfo);
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
