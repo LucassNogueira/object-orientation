@@ -273,7 +273,7 @@ class Phone {
 
   sell() {
     this.sold = true;
-    console.log(this.sold);
+    // console.log(this.sold);
     console.log(this.brand, this.model, "has been sold.");
   }
 
@@ -324,6 +324,8 @@ console.log(phone2);
 */
 
 //Code Here
+phone4.sell();
+console.log(phone4.sold);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
