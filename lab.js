@@ -221,21 +221,21 @@ delete user.age;
 
 //Code here
 
-class Wizard {
-  constructor(name, age, favoriteSpell) {
-    this.name = name;
-    this.age = age;
-    this.favoriteSpell = favoriteSpell;
-  }
+// class Wizard {
+//   constructor(name, age, favoriteSpell) {
+//     this.name = name;
+//     this.age = age;
+//     this.favoriteSpell = favoriteSpell;
+//   }
 
-  castSpell() {
-    console.log(this.name, "has cast", this.favoriteSpell);
-  }
-}
+//   castSpell() {
+//     console.log(this.name, "has cast", this.favoriteSpell);
+//   }
+// }
 
-let wizzard1 = new Wizard("lucas", 27, "fireball");
+// let wizzard1 = new Wizard("lucas", 27, "fireball");
 
-wizzard1.castSpell();
+// wizzard1.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
@@ -261,6 +261,34 @@ wizzard1.castSpell();
 
 //Code Here
 
+class Phone {
+  constructor(brand, model, storage, color, price) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+
+  sell() {
+    this.sold = true;
+    console.log(this.sold);
+    console.log(this.brand, this.model, "has been sold.");
+  }
+
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+}
+
+let phone1 = new Phone("iphone", "X", "225G", "white", "$500");
+console.log(phone1);
+phone1.sell();
+
+phone1.changePrice("$1000");
+
+console.log(phone1);
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
