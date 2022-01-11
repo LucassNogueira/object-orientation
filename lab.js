@@ -154,12 +154,12 @@ totalPopulation(states);
 
 //Code Here
 
-function ingredients(obj) {
-  let { carb, fat, protein } = obj;
-  return [carb, fat, protein];
-}
+// function ingredients(obj) {
+//   let { carb, fat, protein } = obj;
+//   return [carb, fat, protein];
+// }
 
-console.log(ingredients({ carb: "pizza", fat: "butter", protein: "chicken" }));
+// console.log(ingredients({ carb: "pizza", fat: "butter", protein: "chicken" }));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -181,13 +181,16 @@ var user = {
 
 //Code Here
 
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
+console.log(user.name, user.email);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
 */
 
 //Code Here
-
+delete user.age;
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
   Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
