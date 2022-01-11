@@ -314,6 +314,9 @@ let phone4 = new Phone("nokia", "3310", "1mb", "silver", "$160");
 
 //Code Here
 
+phone2.changePrice("$400");
+console.log(phone2);
+
 /*
   Now call the sell method on one of your other phone objects
 
