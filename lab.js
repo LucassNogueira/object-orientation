@@ -300,7 +300,11 @@ console.log(phone1);
 */
 
 //Code Here
+let phone2 = new Phone("motorola", "razer", "500mb", "black", "$299");
 
+let phone3 = new Phone("tmobile", "sidekick", "1g", "red", "$200");
+
+let phone4 = new Phone("nokia", "3310", "1mb", "silver", "$160");
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
