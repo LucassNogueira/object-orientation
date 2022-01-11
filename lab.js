@@ -448,6 +448,7 @@ myFirstMotorcycle.move(100);
 
   Create a method inside of the Boat class called checkSeaworthiness 
   Inside the method, check to see if the boat is seaworthy
+
   If it is, console.log a string: 'The {color} {type} {name} is seaworthy!'
   If it isn't, console.log a string: 'You need to get your {type} in shape!'
 
@@ -462,15 +463,19 @@ class Boat extends Vehicle {
     super(capacity, color, mileage);
     this.name = name;
     this.type = type;
-    this.isSeaworthy = true;
+    this.isSeaworthy = isSeaworthy;
   }
 
   checkSeaworthiness() {
     if (this.isSeaworthy === true) {
       console.log(`the ${this.color} ${this.type} ${this.name} is seaworthy!`);
     } else {
-      console.log(`You need to get your ${type} in shape!`);
+      console.log(`You need to get your ${this.type} in shape!`);
     }
+  }
+
+  performMaintenance() {
+    this.isSeaworthy = true;
   }
 }
 
@@ -481,20 +486,24 @@ class Boat extends Vehicle {
 
 //Code Here
 
+let myFirstBoat = new Boat(4, "blue", 500, "roaddog", "ski", false);
+
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness();
 
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here
-
+myFirstBoat.performMaintenance();
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness();
