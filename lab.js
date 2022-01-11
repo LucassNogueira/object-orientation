@@ -108,16 +108,16 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting(obj) {
-  //Code Here
-  let { firstName, lastName, title } = obj;
-  // Do not edit the code below.
-  return "Hello, " + title + " " + firstName + " " + lastName + "!";
-  // Do not edit the code above.
-}
-console.log(
-  greeting({ title: "President", firstName: "Bob", lastName: "Smith" })
-);
+// function greeting(obj) {
+//   //Code Here
+//   let { firstName, lastName, title } = obj;
+//   // Do not edit the code below.
+//   return "Hello, " + title + " " + firstName + " " + lastName + "!";
+//   // Do not edit the code above.
+// }
+// console.log(
+//   greeting({ title: "President", firstName: "Bob", lastName: "Smith" })
+// );
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
@@ -136,12 +136,12 @@ const states = {
   arizona: 1,
 };
 
-function totalPopulation(obj) {
-  let { utah, california, texas, arizona } = obj;
-  console.log(utah + california + texas + arizona);
-}
+// function totalPopulation(obj) {
+//   let { utah, california, texas, arizona } = obj;
+//   console.log(utah + california + texas + arizona);
+// }
 
-totalPopulation(states);
+// totalPopulation(states);
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
@@ -181,9 +181,9 @@ var user = {
 
 //Code Here
 
-user.name = "Bryan G. Smith";
-user.email = "bryan.smith@devmounta.in";
-console.log(user.name, user.email);
+// user.name = "Bryan G. Smith";
+// user.email = "bryan.smith@devmounta.in";
+// console.log(user.name, user.email);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
@@ -200,16 +200,16 @@ delete user.age;
 
 //Code here
 
-class Dog {
-  constructor(name, age, color) {
-    this.name = name;
-    this.age = age;
-    this.color = color;
-  }
-}
+// class Dog {
+//   constructor(name, age, color) {
+//     this.name = name;
+//     this.age = age;
+//     this.color = color;
+//   }
+// }
 
-let dog1 = new Dog("Meatloaf", 4, "Golden");
-console.log(dog1);
+// let dog1 = new Dog("Meatloaf", 4, "Golden");
+// console.log(dog1);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -221,6 +221,21 @@ console.log(dog1);
 
 //Code here
 
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+
+  castSpell() {
+    console.log(this.name, "has cast", this.favoriteSpell);
+  }
+}
+
+let wizzard1 = new Wizard("lucas", 27, "fireball");
+
+wizzard1.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
