@@ -6,10 +6,10 @@
 
 //Code here
 
-const me = {
-  name: "Lucas",
-  age: 27,
-};
+// const me = {
+//   name: "Lucas",
+//   age: 27,
+// };
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -20,26 +20,26 @@ const me = {
 
 //Code here
 
-const dog = {
-  name: "Meatloaf",
-  color: "golden",
-  age: 4,
-  goodBoy: true,
-};
+// const dog = {
+//   name: "Meatloaf",
+//   color: "golden",
+//   age: 4,
+//   goodBoy: true,
+// };
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
 
-console.log(dog.name);
+// console.log(dog.name);
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
 
-console.log(dog["color"]);
+// console.log(dog["color"]);
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
@@ -49,23 +49,23 @@ console.log(dog["color"]);
 
 //Code here
 
-const favoriteThings = {
-  band: "Balance and Composure",
-  food: "Pizza",
-  person: "Kathryn",
-  book: "none",
-  movie: "inception",
-  holiday: "Thanksgiving",
-};
-console.log(favoriteThings);
+// const favoriteThings = {
+//   band: "Balance and Composure",
+//   food: "Pizza",
+//   person: "Kathryn",
+//   book: "none",
+//   movie: "inception",
+//   holiday: "Thanksgiving",
+// };
+// console.log(favoriteThings);
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
-favoriteThings.car = "Subaru";
-favoriteThings.show = "Narcos";
-console.log(favoriteThings);
+// favoriteThings.car = "Subaru";
+// favoriteThings.show = "Narcos";
+// console.log(favoriteThings);
 /*
 
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -74,9 +74,9 @@ console.log(favoriteThings);
 
 //Code here
 
-favoriteThings["food"] = "Chicken Nuggets";
+// favoriteThings["food"] = "Chicken Nuggets";
 
-console.log(favoriteThings);
+// console.log(favoriteThings);
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
@@ -94,11 +94,11 @@ var carDetails = {
 
 //Code Here
 
-let { color } = carDetails;
-let { make } = carDetails;
-let { model } = carDetails;
-let { year } = carDetails;
-console.log(color, make, model, year);
+// let { color } = carDetails;
+// let { make } = carDetails;
+// let { model } = carDetails;
+// let { year } = carDetails;
+// console.log(color, make, model, year);
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -110,12 +110,14 @@ console.log(color, make, model, year);
 
 function greeting(obj) {
   //Code Here
-
+  let { firstName, lastName, title } = obj;
   // Do not edit the code below.
   return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-
+console.log(
+  greeting({ title: "President", firstName: "Bob", lastName: "Smith" })
+);
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
@@ -127,7 +129,19 @@ function greeting(obj) {
 */
 
 //Code Here
+const states = {
+  utah: 5,
+  california: 3,
+  texas: 2,
+  arizona: 1,
+};
 
+function totalPopulation(obj) {
+  let { utah, california, texas, arizona } = obj;
+  console.log(utah + california + texas + arizona);
+}
+
+totalPopulation(states);
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
